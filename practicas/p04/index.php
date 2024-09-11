@@ -86,5 +86,16 @@
 	echo "<p>".$GLOBALS["b"]."</p>";
 	echo "<p>$z</p>";
 ?>
+<h2>Ejercicio 5</h2>
+<p>Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+<?php
+	$a = "7 personas";
+	$b = (integer) $a;
+	$a = "9E3";
+	$c = (double) $a;
+	echo "<p>$a</p>";
+	echo "<p>$b</p>";
+	echo "<p>$c</p>";
+	?>
 </body>
 </html>
