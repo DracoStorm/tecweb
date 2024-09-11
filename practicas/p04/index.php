@@ -79,6 +79,12 @@
 	$z[0] = "MySQL";
 	echo "<p>$z</p>";
 	echo "<p>".var_dump($z)."</p>";
+	echo "<h2>Ejercicio 4</h2>";
+	echo "<p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de la matriz \$GLOBALS o del modificador global de PHP.</p>";
+
+	echo "<p>".$GLOBALS["a"]."</p>";
+	echo "<p>".$GLOBALS["b"]."</p>";
+	echo "<p>$z</p>";
 ?>
 </body>
 </html>
