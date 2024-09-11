@@ -55,5 +55,30 @@
 	echo "<p>$c</p>";
 ?>
 	<p>Modificamos la variable <b>$a</b> de <i>ManejadorSQL</i> a <i>PHP server</i>. Dado que <b>$c</b> es una referencia a <b>$a</b>, esta refleja este cambio. Lo siguiente q hicimos fue convertir <b>$b</b> en otra referencia de <b>$a</b>, por consigiente muestra el mismo texto.</p>
+<h2>Ejercicio 3</h2>
+<p>Muestra el contenido de cada variable inmediatamente después de cada asignación, verificar la evolución del tipo de estas variables (imprime todos los componentes de los arreglo):</p>
+<?php
+	$a = "PHP5";
+	echo "<p>$a</p>";
+	echo "<p>".var_dump($a)."</p>";
+	$z[] = &$a;
+	echo "<p>$z</p>";
+	echo "<p>".var_dump($z)."</p>";
+	$b = "5a version de PHP";
+	echo "<p>$b</p>";
+	echo "<p>".var_dump($b)."</p>";
+	$c = $b*10;
+	echo "<p>$c</p>";
+	echo "<p>".var_dump($c)."</p>";
+	$a .= $b;
+	echo "<p>$a</p>";
+	echo "<p>".var_dump($a)."</p>";
+	$b *= $c;
+	echo "<p>$b</p>";
+	echo "<p>".var_dump($b)."</p>";
+	$z[0] = "MySQL";
+	echo "<p>$z</p>";
+	echo "<p>".var_dump($z)."</p>";
+?>
 </body>
 </html>
