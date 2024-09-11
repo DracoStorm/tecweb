@@ -118,5 +118,11 @@ echo "<p>Con variable</p>";
 echo "<p>".intval($c)."</p>";
 echo "<p>".intval($e)."</p>";
 ?>
+<h2>Ejercicio 7</h2>
+<p>Usando la variable predefinida $_SERVER, determina lo siguiente:</p>
+<?php
+echo "<p>".$_SERVER['SERVER_SOFTWARE']."</p>";
+echo "<p>".$_SERVER['HTTP_ACCEPT_LANGUAGE']."</p>";
+?>
 </body>
 </html>
