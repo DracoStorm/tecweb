@@ -31,5 +31,29 @@
 		echo '<li>$house*5 es inválida porque el símbolo * no está permitido.</li>';
 		echo '</ul>';
 	?>
+	<h2>Ejercicio 2</h2>
+	<p>Proporcionar los valores de $a, $b, $c</p>
+	<ul>
+	<li>a. Ahora muestra el contenido de cada variable</li>
+	<li>b. Agrega al código actual las siguientes asignaciones:</li>
+	<li>c. Vuelve a mostrar el contenido de cada uno</li>
+	</ul>
+<?php
+	echo "<p>a)</p>";
+	$a = "ManejadorSQL";
+	$b = 'MySQL';
+	$c = &$a;
+	echo "<p>$a</p>";
+	echo "<p>$b</p>";
+	echo "<p>$c</p>";
+	//b)
+	$a = "PHP server";
+	$b = &$a;
+	echo "<p>c)</p>";
+	echo "<p>$a</p>";
+	echo "<p>$b</p>";
+	echo "<p>$c</p>";
+?>
+	<p>Modificamos la variable <b>$a</b> de <i>ManejadorSQL</i> a <i>PHP server</i>. Dado que <b>$c</b> es una referencia a <b>$a</b>, esta refleja este cambio. Lo siguiente q hicimos fue convertir <b>$b</b> en otra referencia de <b>$a</b>, por consigiente muestra el mismo texto.</p>
 </body>
 </html>
